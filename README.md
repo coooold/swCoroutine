@@ -123,3 +123,5 @@ class HttpClientCoTask extends CoroutineTask{
 #ab -n1000 -c200 "http://127.0.0.1:9502/sync"
 ```
 
+
+这段代码需要配合Swoole master分支使用，编译参数./configure --enable-async-httpclient，开启异步http client。
